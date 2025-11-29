@@ -4,7 +4,6 @@ type: 'Content'
 
 content:
   node:
-    # สร้างหน้า Home (จะเป็น Node ID 1 หากเป็นเนื้อหาแรกของเว็บ)
     page_home:
       type: page
       title: 'Home'
@@ -89,7 +88,6 @@ content:
               </div>
           </section>
     
-    # หน้าที่ 2: About Us
     page_about:
       type: page
       title: 'เกี่ยวกับเรา'
@@ -174,8 +172,7 @@ content:
                 </div>
             </section>
 
-    # หน้าที่ 3: Products
-    page_about:
+    page_products:
       type: page
       title: 'ผลิตภัณฑ์ของเรา'
       uid: 1
@@ -314,8 +311,7 @@ content:
                 </div>
             </section>
 
-    # หน้าที่ 4: Products Detail Subbase (Example)
-    page_about:
+    page_products_detail_subbase:
       type: page
       title: 'หินคลุก (Subbase)'
       uid: 1
@@ -454,8 +450,7 @@ content:
 
             </section>
 
-    # หน้าที่ 5: Products Detail Subbase (Example)
-    page_about:
+    page_ir:
       type: page
       title: 'นักลงทุนสัมพันธ์'
       uid: 1
