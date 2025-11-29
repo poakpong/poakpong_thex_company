@@ -5,20 +5,15 @@ _meta:
   bundle: page
   default_langcode: en
 title:
-  -
-    value: Home
+  - value: Home
 uid:
-  -
-    target_id: 1
+  - target_id: 1
 status:
-  -
-    value: true
+  - value: true
 path:
-  -
-    alias: /home
+  - alias: /home
 body:
-  -
-    format: full_html
+  - format: full_html
     value: |
         <!-- ส่วน Hero Banner -->
         <section class="hero">

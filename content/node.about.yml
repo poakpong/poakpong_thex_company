@@ -5,20 +5,15 @@ _meta:
   bundle: page
   default_langcode: en
 title:
-  -
-    value: 'เกี่ยวกับเรา'
+  - value: 'เกี่ยวกับเรา'
 uid:
-  -
-    target_id: 1
+  - target_id: 1
 status:
-  -
-    value: true
+  - value: true
 path:
-  -
-    alias: /about
+  - alias: /about
 body:
-  -
-    format: full_html
+  - format: full_html
     value: |
         <section class="story">
             <div class="container story-grid">
