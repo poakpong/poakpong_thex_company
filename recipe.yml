@@ -13,20 +13,620 @@ install:
 config:
   import:
     asset_injector: '*'
-
   actions:
     system.theme:
       simple_config_update:
         default: 'thex'
         admin: 'claro'
-
     user.settings:
       simple_config_update:
         register: 'admin_only'
-
     system.site:
       simple_config_update:
         name: 'Saha Akanee Public Company Limited'
         slogan: 'Innovation for Future'
         page:
           front: '/node/1'
+
+content:
+  node:
+    page_home:
+      type: page
+      title: 'Home'
+      uid: 1
+      status: 1
+      path: 
+        alias: '/home'
+      body:
+        format: 'full_html'
+        value: |
+          <!-- ส่วน Hero Banner -->
+          <section class="hero">
+              <div class="container hero-content">
+                  <h1>รากฐานที่แข็งแกร่ง<br>สู่การก่อสร้างที่ยั่งยืน</h1>
+                  <p>ผู้นำด้านอุตสาหกรรมเหมืองหินและผลิตภัณฑ์หินแปรรูปครบวงจร<br>มุ่งเน้นคุณภาพควบคู่ไปกับการดูแลชุมชนและสิ่งแวดล้อม</p>
+                  <a href="#" class="btn btn-primary">ดูผลิตภัณฑ์ของเรา</a>
+              </div>
+          </section>
+
+          <!-- ส่วน Stats -->
+          <section class="stats">
+              <div class="container stats-grid">
+                  <div class="stat-item">
+                      <h3>30+</h3>
+                      <p>ปีแห่งประสบการณ์</p>
+                  </div>
+                  <div class="stat-item">
+                      <h3>5</h3>
+                      <p>เหมืองหินคุณภาพ</p>
+                  </div>
+                  <div class="stat-item">
+                      <h3>10M+</h3>
+                      <p>ตัน กำลังการผลิตต่อปี</p>
+                  </div>
+                  <div class="stat-item">
+                      <h3>SET</h3>
+                      <p>จดทะเบียนในตลาดหลักทรัพย์ฯ</p>
+                  </div>
+              </div>
+          </section>
+
+          <!-- ส่วน Products -->
+          <section class="products">
+              <div class="container">
+                  <div class="section-title">
+                      <h2>ผลิตภัณฑ์ของเรา</h2>
+                      <div class="divider"></div>
+                      <p style="margin-top:15px; color:#666;">ตอบโจทย์ทุกความต้องการด้านงานก่อสร้างและอุตสาหกรรม</p>
+                  </div>
+
+                  <div class="product-grid">
+                      <article class="product-card">
+                          <div class="product-img">
+                              <img src="https://placehold.co/400x300/555/FFF?text=Construction+Stone" alt="หินก่อสร้าง" style="width:100%; height:100%; object-fit:cover;">
+                          </div>
+                          <div class="product-content">
+                              <h3>หินเพื่อการก่อสร้าง</h3>
+                              <p>หินคลุก, หิน 3/4 คุณภาพสูง สำหรับงานถนนและคอนกรีต แข็งแรง ทนทาน</p>
+                          </div>
+                      </article>
+
+                      <article class="product-card">
+                          <div class="product-img">
+                              <img src="https://placehold.co/400x300/555/FFF?text=Industrial+Stone" alt="หินอุตสาหกรรม" style="width:100%; height:100%; object-fit:cover;">
+                          </div>
+                          <div class="product-content">
+                              <h3>หินเพื่ออุตสาหกรรม</h3>
+                              <p>หินปูนบดละเอียด วัตถุดิบสำคัญสำหรับอุตสาหกรรมแก้ว เซรามิก และเคมีภัณฑ์</p>
+                          </div>
+                      </article>
+
+                      <article class="product-card">
+                          <div class="product-img">
+                              <img src="https://placehold.co/400x300/555/FFF?text=Decorative+Stone" alt="หินตกแต่ง" style="width:100%; height:100%; object-fit:cover;">
+                          </div>
+                          <div class="product-content">
+                              <h3>หินตกแต่งสวน</h3>
+                              <p>หินกาบ หินภูเขา และหินแม่น้ำ คัดพิเศษเพื่อความสวยงามในงานสถาปัตยกรรม</p>
+                          </div>
+                      </article>
+                  </div>
+              </div>
+          </section>
+    
+    page_about:
+      type: page
+      title: 'เกี่ยวกับเรา'
+      uid: 1
+      status: 1
+      path: 
+        alias: '/about'
+      body:
+        format: 'full_html'
+        value: |
+            <section class="story">
+                <div class="container story-grid">
+                    <div class="story-img-col">
+                        <img src="https://placehold.co/600x400/555/FFF?text=Company+HQ" alt="Saha Akanee HQ" class="story-img">
+                    </div>
+                    <div class="story-content">
+                        <h2>เส้นทางสู่ความสำเร็จกว่า 3 ทศวรรษ</h2>
+                        <p>บริษัท สหอัคนี จำกัด (มหาชน) ก่อตั้งขึ้นเมื่อปี พ.ศ. 2535 โดยเริ่มต้นจากธุรกิจเหมืองหินขนาดเล็กในจังหวัดสระบุรี ด้วยความมุ่งมั่นที่จะยกระดับมาตรฐานอุตสาหกรรมเหมืองแร่ไทย</p>
+                        <br>
+                        <p>ปัจจุบัน เราได้เติบโตเป็นผู้นำด้านการผลิตและจำหน่ายผลิตภัณฑ์หินแปรรูปครบวงจร ที่ได้รับการยอมรับในระดับสากล และได้เข้าจดทะเบียนในตลาดหลักทรัพย์แห่งประเทศไทย (SET) เพื่อรองรับการขยายตัวของโครงสร้างพื้นฐานทั่วภูมิภาคอาเซียน</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="vm-section">
+                <div class="container">
+                    <div class="vm-grid">
+                        <div class="vm-card">
+                            <h3>
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="var(--accent-color)"><path d="M12 2L2 22h20L12 2zm0 3.5L18.5 20H5.5L12 5.5z"/></svg>
+                                วิสัยทัศน์ (Vision)
+                            </h3>
+                            <p>"เป็นผู้นำด้านนวัตกรรมเหมืองหินระดับอาเซียน ที่มุ่งเน้นคุณภาพผลิตภัณฑ์เป็นเลิศ ควบคู่ไปกับการดูแลชุมชนและสิ่งแวดล้อมอย่างยั่งยืน"</p>
+                        </div>
+                        <div class="vm-card">
+                            <h3>
+                                <svg width="30" height="30" viewBox="0 0 24 24" fill="var(--accent-color)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+                                พันธกิจ (Mission)
+                            </h3>
+                            <ul>
+                                <li>1. ส่งมอบหินคุณภาพสูงเพื่อรองรับงานโครงสร้างพื้นฐาน</li>
+                                <li>2. บริหารจัดการทรัพยากรธรรมชาติให้เกิดประโยชน์สูงสุด (Zero Waste)</li>
+                                <li>3. สร้างรายได้และการเติบโตไปพร้อมกับชุมชนรอบเหมือง</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>คณะกรรมการบริหาร</h2>
+                        <div style="width: 50px; height: 3px; background: var(--accent-color); margin: 10px auto;"></div>
+                    </div>
+
+                    <div class="team-grid">
+                        <div class="team-card">
+                            <div class="team-img-wrapper">
+                                <img src="https://placehold.co/300x300/333/FFF?text=Chairman" alt="Chairman" class="team-img">
+                            </div>
+                            <h3 class="team-name">นายเกริกไกร ศิลาแกร่ง</h3>
+                            <p class="team-role">ประธานกรรมการบริษัท</p>
+                        </div>
+
+                        <div class="team-card">
+                            <div class="team-img-wrapper">
+                                <img src="https://placehold.co/300x300/333/FFF?text=CEO" alt="CEO" class="team-img">
+                            </div>
+                            <h3 class="team-name">นางสาวรินรดา พสุธา</h3>
+                            <p class="team-role">ประธานเจ้าหน้าที่บริหาร (CEO)</p>
+                        </div>
+
+                        <div class="team-card">
+                            <div class="team-img-wrapper">
+                                <img src="https://placehold.co/300x300/333/FFF?text=MD" alt="MD" class="team-img">
+                            </div>
+                            <h3 class="team-name">นายปฐพี มั่นคง</h3>
+                            <p class="team-role">กรรมการผู้จัดการใหญ่</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    page_products:
+      type: page
+      title: 'ผลิตภัณฑ์ของเรา'
+      uid: 1
+      status: 1
+      path: 
+        alias: '/products'
+      body:
+        format: 'full_html'
+        value: |
+            <section class="category-section">
+                <div class="container">
+                    <div class="category-header">
+                        <div class="category-icon">🏗️</div>
+                        <div class="category-title">
+                            <h2>หินเพื่อการก่อสร้าง (Construction Aggregates)</h2>
+                            <p>วัตถุดิบคุณภาพสูง สำหรับงานโครงสร้าง ถนน และคอนกรีตผสมเสร็จ ผ่านมาตรฐาน ASTM</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="https://placehold.co/400x300/666/FFF?text=Hin+Klook" alt="หินคลุก" class="product-img">
+                            <div class="product-body">
+                                <h3 class="product-title">หินคลุก (Subbase)</h3>
+                                <p class="product-desc">หินปูนปนฝุ่นที่ผ่านการบดอัด สำหรับงานพื้นถนน รองพื้นโรงงาน</p>
+                                <ul class="product-specs">
+                                    <li><span class="spec-label">ขนาด:</span> <span class="spec-value">0 - 37.5 มม.</span></li>
+                                    <li><span class="spec-label">การใช้งาน:</span> <span class="spec-value">งานถนน, ถมที่</span></li>
+                                </ul>
+                                <a href="/product-detail-subbase" class="btn btn-outline" style="width:100%; text-align:center;">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://placehold.co/400x300/666/FFF?text=Stone+3/4" alt="หินเบอร์ 1" class="product-img">
+                            <div class="product-body">
+                                <h3 class="product-title">หินเบอร์ 1 (3/4")</h3>
+                                <p class="product-desc">หินผสมคอนกรีตยอดนิยม สะอาด แข็งแกร่ง ได้มาตรฐาน</p>
+                                <ul class="product-specs">
+                                    <li><span class="spec-label">ขนาด:</span> <span class="spec-value">19 - 25 มม.</span></li>
+                                    <li><span class="spec-label">การใช้งาน:</span> <span class="spec-value">หล่อเสา, คาน</span></li>
+                                </ul>
+                                <a href="#" class="btn btn-outline" style="width:100%; text-align:center;">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://placehold.co/400x300/666/FFF?text=Stone+2" alt="หินเบอร์ 2" class="product-img">
+                            <div class="product-body">
+                                <h3 class="product-title">หินเบอร์ 2 (1-2")</h3>
+                                <p class="product-desc">หินขนาดใหญ่ สำหรับงานฐานราก หรืองานที่ต้องการการรับน้ำหนักสูง</p>
+                                <ul class="product-specs">
+                                    <li><span class="spec-label">ขนาด:</span> <span class="spec-value">25 - 50 มม.</span></li>
+                                    <li><span class="spec-label">การใช้งาน:</span> <span class="spec-value">งานเขื่อน, ทางรถไฟ</span></li>
+                                </ul>
+                                <a href="#" class="btn btn-outline" style="width:100%; text-align:center;">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section" style="background-color: #fafafa;">
+                <div class="container">
+                    <div class="category-header">
+                        <div class="category-icon">⚙️</div>
+                        <div class="category-title">
+                            <h2>หินเพื่ออุตสาหกรรม (Industrial Rocks)</h2>
+                            <p>วัตถุดิบเคมีภัณฑ์ แคลเซียมคาร์บอเนตสูง สำหรับภาคการผลิต</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="https://placehold.co/400x300/888/FFF?text=Limestone+Powder" alt="หินปูนบด" class="product-img">
+                            <div class="product-body">
+                                <h3 class="product-title">หินปูนบดละเอียด</h3>
+                                <p class="product-desc">วัตถุดิบหลักในอุตสาหกรรมหลากหลายชนิด ความบริสุทธิ์สูง</p>
+                                <ul class="product-specs">
+                                    <li><span class="spec-label">ความละเอียด:</span> <span class="spec-value">325 Mesh</span></li>
+                                    <li><span class="spec-label">CaCO3:</span> <span class="spec-value">> 98%</span></li>
+                                </ul>
+                                <a href="#" class="btn btn-outline" style="width:100%; text-align:center;">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="https://placehold.co/400x300/888/FFF?text=Chemical+Stone" alt="หินเคมี" class="product-img">
+                            <div class="product-body">
+                                <h3 class="product-title">หินก้อนใหญ่ (Rip Rap)</h3>
+                                <p class="product-desc">หินขนาดใหญ่คัดพิเศษ สำหรับงานป้องกันการกัดเซาะชายฝั่ง</p>
+                                <ul class="product-specs">
+                                    <li><span class="spec-label">ขนาด:</span> <span class="spec-value">30 - 60 ซม.</span></li>
+                                    <li><span class="spec-label">การใช้งาน:</span> <span class="spec-value">เขื่อนกั้นน้ำ</span></li>
+                                </ul>
+                                <a href="#" class="btn btn-outline" style="width:100%; text-align:center;">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category-section">
+                <div class="container">
+                    <div class="category-header">
+                        <div class="category-icon">🏡</div>
+                        <div class="category-title">
+                            <h2>หินตกแต่ง (Decorative Stones)</h2>
+                            <p>เพิ่มความสวยงามให้ภูมิทัศน์ ด้วยหินธรรมชาติคัดเกรด</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <div class="product-card">
+                            <img src="https://placehold.co/400x300/A67C52/FFF?text=Garden+Stone" alt="หินจัดสวน" class="product-img">
+                            <div class="product-body">
+                                <h3 class="product-title">หินแม่น้ำคละสี</h3>
+                                <p class="product-desc">หินธรรมชาติผิวเรียบมน เหมาะสำหรับตกแต่งสวนและทางเดิน</p>
+                                <ul class="product-specs">
+                                    <li><span class="spec-label">บรรจุ:</span> <span class="spec-value">ถุง 10 กก. / 25 กก.</span></li>
+                                    <li><span class="spec-label">สี:</span> <span class="spec-value">ขาว, ดำ, น้ำผึ้ง</span></li>
+                                </ul>
+                                <a href="#" class="btn btn-outline" style="width:100%; text-align:center;">ดูรายละเอียด</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="container cta-box">
+                    <h2>ต้องการใบเสนอราคาสำหรับโครงการ?</h2>
+                    <p>ทีมงานขายโครงการของเราพร้อมให้คำปรึกษาและประเมินราคาพิเศษสำหรับผู้รับเหมาและโรงงานอุตสาหกรรม</p>
+                    <a href="#" class="btn" style="background-color: var(--white); color: var(--accent-color); font-weight:bold;">ขอใบเสนอราคา</a>
+                    <a href="#" class="btn" style="border: 1px solid var(--white); margin-left: 10px;">ติดต่อฝ่ายขาย</a>
+                </div>
+            </section>
+
+    page_products_detail_subbase:
+      type: page
+      title: 'หินคลุก (Subbase)'
+      uid: 1
+      status: 1
+      path: 
+        alias: '/products-detail-subbase'
+      body:
+        format: 'full_html'
+        value: |
+            <div class="breadcrumb-nav">
+                <div class="container">
+                    <p class="breadcrumb">
+                        <a href="index.html">หน้าแรก</a> <span>/</span> 
+                        <a href="products.html">ผลิตภัณฑ์</a> <span>/</span>
+                        <a href="#">หินเพื่อการก่อสร้าง</a> <span>/</span>
+                        หินคลุก (Subbase)
+                    </p>
+                </div>
+            </div>
+
+            <section class="container product-detail-section">
+                <div class="product-main-grid">
+                    
+                    <div class="product-left">
+                        <div class="product-gallery-main">
+                            <img src="https://placehold.co/800x600/666/FFF?text=Subbase+Stone" alt="หินคลุก">
+                        </div>
+                        <div class="product-thumbnails">
+                            <img src="https://placehold.co/100x100/666/FFF?text=1" class="thumb active" alt="thumb1">
+                            <img src="https://placehold.co/100x100/777/FFF?text=2" class="thumb" alt="thumb2">
+                            <img src="https://placehold.co/100x100/888/FFF?text=3" class="thumb" alt="thumb3">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <span class="product-category-tag">Construction Aggregates</span>
+                        <h1>หินคลุก (Subbase)</h1>
+                        <p class="short-desc">หินปูนที่ผ่านกระบวนการบดอัด มีส่วนผสมของหินขนาดต่างๆ และฝุ่นหินอย่างเหมาะสม ทำให้มีการยึดเกาะตัวที่ดีเยี่ยมเมื่อทำการบดอัด</p>
+
+                        <ul class="feature-list">
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <strong>มาตรฐาน:</strong> ASTM D-2940 / DH-S 203
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <strong>ขนาด:</strong> คละขนาด 0 - 37.5 มม.
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                                <strong>คุณสมบัติเด่น:</strong> แข็งแรง รับน้ำหนักได้ดี ยึดเกาะแน่น
+                            </li>
+                        </ul>
+
+                        <div class="action-buttons">
+                            <a href="#quote-form" class="btn btn-primary">ขอใบเสนอราคา</a>
+                            <a href="#" class="btn btn-outline">
+                                <svg style="width:16px; margin-right:5px; vertical-align:middle; fill:currentColor;" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                                ดาวน์โหลด Datasheet
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-container">
+                    <div class="detail-header">
+                        <span class="detail-tab">คุณสมบัติทางเทคนิค (Technical Specs)</span>
+                    </div>
+                    
+                    <p style="margin-bottom: 20px;">ผลิตภัณฑ์หินคลุกของเรา ผลิตจากเหมืองหินปูนคุณภาพสูง ผ่านกระบวนการโม่และคัดแยกด้วยเครื่องจักรทันสมัย ได้มาตรฐานกรมทางหลวง เหมาะสำหรับงานก่อสร้างโครงสร้างพื้นฐาน</p>
+                    
+                    <table class="spec-table">
+                        <tbody>
+                            <tr>
+                                <th>ประเภทหิน (Rock Type)</th>
+                                <td>หินปูน (Limestone)</td>
+                            </tr>
+                            <tr>
+                                <th>ขนาดคละ (Gradation)</th>
+                                <td>0 - 37.5 mm. (0 - 1.5 inches)</td>
+                            </tr>
+                            <tr>
+                                <th>ค่าความสึกหรอ (Abrasion)</th>
+                                <td>ไม่เกิน 40% (Los Angeles Abrasion Test)</td>
+                            </tr>
+                            <tr>
+                                <th>ค่าดัชนีความแบน (Flakiness Index)</th>
+                                <td>ไม่เกิน 30%</td>
+                            </tr>
+                            <tr>
+                                <th>ค่าการดูดซึมน้ำ (Water Absorption)</th>
+                                <td>ไม่เกิน 1.5%</td>
+                            </tr>
+                            <tr>
+                                <th>การใช้งานที่แนะนำ (Applications)</th>
+                                <td>
+                                    • ชั้นรองพื้นทาง (Subbase Course)<br>
+                                    • งานถมปรับระดับพื้นที่ (Land Filling)<br>
+                                    • ลานจอดรถและถนนส่วนบุคคล
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="quote-form" class="quote-section">
+                    <h2 style="color: var(--primary-color);">สนใจสั่งซื้อ หรือ ขอใบเสนอราคา</h2>
+                    <p>กรุณากรอกข้อมูลเพื่อให้เจ้าหน้าที่ฝ่ายขายติดต่อกลับโดยเร็วที่สุด</p>
+                    
+                    <form action="#" style="margin-top: 20px;">
+                        <div class="quote-grid">
+                            <div class="form-group">
+                                <label>ชื่อ-นามสกุล หรือ ชื่อบริษัท</label>
+                                <input type="text" class="form-input" placeholder="เช่น บจก. ก่อสร้างไทย">
+                            </div>
+                            <div class="form-group">
+                                <label>เบอร์โทรศัพท์ติดต่อ</label>
+                                <input type="tel" class="form-input" placeholder="08x-xxx-xxxx">
+                            </div>
+                            <div class="form-group">
+                                <label>ปริมาณที่ต้องการ (ตัน/คิว)</label>
+                                <input type="text" class="form-input" placeholder="เช่น 100 ตัน">
+                            </div>
+                            <div class="form-group">
+                                <label>สถานที่จัดส่ง</label>
+                                <input type="text" class="form-input" placeholder="ระบุจังหวัด / เขต">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>รายละเอียดเพิ่มเติม</label>
+                            <textarea class="form-input" rows="4" placeholder="ระบุวันที่ต้องการใช้สินค้า หรือข้อความอื่นๆ"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary">ส่งข้อมูลขอราคา</button>
+                    </form>
+                </div>
+
+            </section>
+
+    page_ir:
+      type: page
+      title: 'นักลงทุนสัมพันธ์'
+      uid: 1
+      status: 1
+      path: 
+        alias: '/ir'
+      body:
+        format: 'full_html'
+        value: |
+            <section class="ir-hero">
+                <div class="container text-center">
+                    <h1>นักลงทุนสัมพันธ์</h1>
+                    <p>ข้อมูลทางการเงินและการลงทุน เพื่อการเติบโตที่ยั่งยืน</p>
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="stock-ticker">
+                    <div class="stock-col">
+                        <h3>SAHA AKANEE (SAK)</h3>
+                        <p style="font-size: 0.9rem; color:#888;">Market: SET | Industry: Construction Materials</p>
+                    </div>
+                    <div class="stock-col">
+                        <div class="stock-price">14.50 THB</div>
+                        <div class="stock-change up">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 14l5-5 5 5z"/></svg>
+                            +0.20 (+1.40%)
+                        </div>
+                    </div>
+                    <div class="stock-col">
+                        <div class="stock-volume">Volume: 5,230,100 หุ้น</div>
+                        <div class="stock-volume">Value: 75.83 MB</div>
+                    </div>
+                    <div class="stock-col" style="text-align: right;">
+                        <div class="stock-update">ข้อมูลล่าช้า 15 นาที<br>29 พ.ย. 2024 16:30 น.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="ir-menu">
+                    <a href="#" class="ir-menu-item active">ภาพรวมข้อมูลการเงิน</a>
+                    <a href="#" class="ir-menu-item">ข่าวแจ้งตลาดหลักทรัพย์</a>
+                    <a href="#" class="ir-menu-item">รายงานประจำปี</a>
+                    <a href="#" class="ir-menu-item">การกำกับดูแลกิจการ</a>
+                    <a href="#" class="ir-menu-item">ห้องนักลงทุน</a>
+                </div>
+            </div>
+
+            <section class="fin-section">
+                <div class="container">
+                    <div class="section-head">
+                        <h2>ข้อมูลสำคัญทางการเงิน (Financial Highlights)</h2>
+                        <p style="color:#666;">ผลการดำเนินงานประจำปี 2566 (สิ้นสุด 31 ธ.ค.)</p>
+                    </div>
+
+                    <div class="fin-grid">
+                        <div class="fin-card">
+                            <h3>รายได้รวม (Total Revenue)</h3>
+                            <div class="fin-value">2,850</div>
+                            <div class="fin-unit">ล้านบาท (THB Million)</div>
+                            <div class="fin-change">▲ +12.5% YoY</div>
+                        </div>
+                        <div class="fin-card">
+                            <h3>กำไรสุทธิ (Net Profit)</h3>
+                            <div class="fin-value">420</div>
+                            <div class="fin-unit">ล้านบาท (THB Million)</div>
+                            <div class="fin-change">▲ +8.2% YoY</div>
+                        </div>
+                        <div class="fin-card">
+                            <h3>กำไรต่อหุ้น (EPS)</h3>
+                            <div class="fin-value">0.85</div>
+                            <div class="fin-unit">บาท/หุ้น (Baht/Share)</div>
+                            <div class="fin-change">▲ +5.0% YoY</div>
+                        </div>
+                        <div class="fin-card">
+                            <h3>อัตรากำไรสุทธิ (Net Margin)</h3>
+                            <div class="fin-value">14.7</div>
+                            <div class="fin-unit">เปอร์เซ็นต์ (%)</div>
+                            <div class="fin-change" style="color:#888;">- คงที่ -</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="report-section">
+                <div class="container">
+                    <div class="section-head" style="text-align: left; max-width: 900px; margin: 0 auto 30px;">
+                        <h2>ศูนย์รวมเอกสารและรายงาน (Reports Center)</h2>
+                        <div style="width: 60px; height: 3px; background: var(--accent-color); margin-top: 10px;"></div>
+                    </div>
+
+                    <div class="report-list">
+                        <div class="report-item">
+                            <div class="report-info">
+                                <div class="pdf-icon">PDF</div>
+                                <div class="report-title">
+                                    <h4>แบบ 56-1 One Report ประจำปี 2566</h4>
+                                    <span class="report-date">อัปเดต: 28 ก.พ. 2567 | ขนาด: 15.4 MB</span>
+                                </div>
+                            </div>
+                            <a href="#" class="download-btn">ดาวน์โหลด</a>
+                        </div>
+
+                        <div class="report-item">
+                            <div class="report-info">
+                                <div class="pdf-icon">PDF</div>
+                                <div class="report-title">
+                                    <h4>งบการเงิน ไตรมาส 3/2567</h4>
+                                    <span class="report-date">อัปเดต: 14 พ.ย. 2567 | ขนาด: 2.1 MB</span>
+                                </div>
+                            </div>
+                            <a href="#" class="download-btn">ดาวน์โหลด</a>
+                        </div>
+
+                        <div class="report-item">
+                            <div class="report-info">
+                                <div class="pdf-icon">PDF</div>
+                                <div class="report-title">
+                                    <h4>คำอธิบายและการวิเคราะห์ของฝ่ายจัดการ (MD&A) Q3/2567</h4>
+                                    <span class="report-date">อัปเดต: 14 พ.ย. 2567 | ขนาด: 1.5 MB</span>
+                                </div>
+                            </div>
+                            <a href="#" class="download-btn">ดาวน์โหลด</a>
+                        </div>
+
+                        <div class="report-item">
+                            <div class="report-info">
+                                <div class="pdf-icon">PDF</div>
+                                <div class="report-title">
+                                    <h4>เอกสารนำเสนอ Opportunity Day Q3/2567</h4>
+                                    <span class="report-date">อัปเดต: 20 พ.ย. 2567 | ขนาด: 8.5 MB</span>
+                                </div>
+                            </div>
+                            <a href="#" class="download-btn">ดาวน์โหลด</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ir-contact">
+                <div class="container">
+                    <div class="contact-box">
+                        <h2>ติดต่อนักลงทุนสัมพันธ์</h2>
+                        <p style="margin-bottom: 20px; opacity: 0.9;">สอบถามข้อมูลการลงทุนหรือแจ้งเบาะแสการทุจริต</p>
+                        <p style="font-size: 1.2rem; font-weight: bold;">คุณสมชาย ใจดี (เลขานุการบริษัท)</p>
+                        <p>โทร: 02-123-4567 ต่อ 888 (ฝ่ายนักลงทุนสัมพันธ์)</p>
+                        <p>อีเมล: ir@sahaakanee.co.th</p>
+                        <br>
+                        <a href="#" class="btn" style="background: white; color: var(--primary-color);">ส่งข้อความถึง IR</a>
+                    </div>
+                </div>
+            </section>
