@@ -1,0 +1,30 @@
+name: 'Demo Company Profile (Thex Theme)'
+description: 'Sets up a Company Profile demo site using Thex theme with custom corporate branding CSS'
+type: 'Site'
+
+install:
+  - node
+  - block
+  - system
+  - user
+  - asset_injector
+  - thex
+
+config:
+  import:
+    asset_injector: '*'
+
+  actions:
+    system.theme:
+      simple_config_update:
+        default: 'thex'
+        admin: 'claro'
+
+    user.settings:
+      simple_config_update:
+        register: 'admin_only'
+
+    system.site:
+      simple_config_update:
+        name: 'Saha Akanee Public Company Limited'
+        slogan: 'Innovation for Future'

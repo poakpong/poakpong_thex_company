@@ -1,0 +1,10 @@
+{
+  "name": "poakpong/poakpong_thex_company",
+  "description": "Recipe for Company Profile Demo Site",
+  "type": "drupal-recipe",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "drupal/thex": "*",
+    "drupal/asset_injector": "*"
+  }
+}

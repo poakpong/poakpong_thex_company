@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - asset_injector
+id: company_theme_style
+label: 'Corporate Branding Style'
+code: |
+  /* ปรับแต่งสไตล์สำหรับ Company Profile */
+  :root {
+    --brand-primary: #003366; /* สีน้ำเงินเข้มองค์กร */
+    --brand-accent: #f9a825;  /* สีเหลืองทอง */
+  }
+
+  body {
+    font-family: 'Sarabun', sans-serif; /* แนะนำฟอนต์ไทยสวยๆ */
+  }
+
+  /* ปรับแต่ง Header ของ Thex */
+  header.site-header {
+    background-color: var(--brand-primary);
+    color: #ffffff;
+    border-bottom: 4px solid var(--brand-accent);
+  }
+
+  /* ปรับแต่งปุ่มให้ดูทางการ */
+  .button, .btn {
+    border-radius: 4px;
+    background-color: var(--brand-primary);
+  }
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true
