@@ -1,0 +1,25 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  # คุณต้องสร้าง UUID ขึ้นมาเอง (สุ่มตัวเลข/ตัวอักษรได้เลย แต่ต้องไม่ซ้ำ)
+  uuid: '94d2f831-56c4-406d-9654-f57912345678' 
+  default_langcode: en
+
+type:
+  - target_id: page
+
+title:
+  - value: 'Home'
+
+# การระบุ User (uid) ต้องใช้ target_uuid ของ user นั้น (ไม่ใช่ ID 1)
+# แต่ถ้าเป็น Recipes ปกติจะข้าม uid ไป ระบบจะให้ Anonymous หรือ Admin เป็นเจ้าของแทน
+status:
+  - value: true
+
+body:
+  - value: '<p>Welcome to our Home page.</p>'
+    format: 'full_html'
+
+path:
+  - alias: '/home'
+    langcode: en

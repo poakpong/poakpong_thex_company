@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: '88d2f831-12c4-406d-9654-f57987654321' # UUID ต้องไม่ซ้ำกับ Home
+  default_langcode: en
+
+type:
+  - target_id: page
+
+title:
+  - value: 'เกี่ยวกับเรา'
+
+status:
+  - value: true
+
+body:
+  - value: '<p>About Us content goes here.</p>'
+    format: 'full_html'
+
+path:
+  - alias: '/about'
+    langcode: en

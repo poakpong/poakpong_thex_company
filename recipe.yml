@@ -10,6 +10,9 @@ install:
   - asset_injector
   - thex
 
+recipes:
+  - content/demo_pages
+
 config:
   import:
     asset_injector: '*'

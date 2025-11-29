@@ -1,0 +1,12 @@
+name: 'Demo Pages Content'
+description: 'Import basic pages for the demo site'
+type: 'Content'
+
+install:
+  - node
+  - path # จำเป็นสำหรับ Path alias
+  - text # จำเป็นสำหรับ Body field
+
+content:
+  # เครื่องหมาย * หมายถึงให้ import ทุกไฟล์ที่อยู่ในโฟลเดอร์ content ของ recipe นี้
+  '*': 'content'
