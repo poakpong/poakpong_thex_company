@@ -30,5 +30,10 @@ code: |
   }
 media: all
 preprocess: true
-conditions: {  }
+conditions:
+  current_theme:
+    id: current_theme
+    negate: false
+    theme: thex
+context: { }
 conditions_require_all: true
