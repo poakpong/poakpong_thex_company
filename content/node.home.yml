@@ -1,7 +1,7 @@
 _meta:
   version: '1.0'
   entity_type: node
-  uuid: home-page-uuid
+  uuid: 943ef996-56f4-4482-af23-288210390161
   bundle: page
   default_langcode: en
 title:
