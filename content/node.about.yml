@@ -1,0 +1,95 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: about-page-uuid
+  bundle: page
+  default_langcode: en
+title:
+  -
+    value: เกี่ยวกับเรา
+uid:
+  -
+    target_id: 1
+status:
+  -
+    value: true
+path:
+  -
+    alias: /about
+body:
+  -
+    format: full_html
+    value: |
+        <section class="story">
+            <div class="container story-grid">
+                <div class="story-img-col">
+                    <img src="https://placehold.co/600x400/555/FFF?text=Company+HQ" alt="Saha Akanee HQ" class="story-img">
+                </div>
+                <div class="story-content">
+                    <h2>เส้นทางสู่ความสำเร็จกว่า 3 ทศวรรษ</h2>
+                    <p>บริษัท สหอัคนี จำกัด (มหาชน) ก่อตั้งขึ้นเมื่อปี พ.ศ. 2535 โดยเริ่มต้นจากธุรกิจเหมืองหินขนาดเล็กในจังหวัดสระบุรี ด้วยความมุ่งมั่นที่จะยกระดับมาตรฐานอุตสาหกรรมเหมืองแร่ไทย</p>
+                    <br>
+                    <p>ปัจจุบัน เราได้เติบโตเป็นผู้นำด้านการผลิตและจำหน่ายผลิตภัณฑ์หินแปรรูปครบวงจร ที่ได้รับการยอมรับในระดับสากล และได้เข้าจดทะเบียนในตลาดหลักทรัพย์แห่งประเทศไทย (SET) เพื่อรองรับการขยายตัวของโครงสร้างพื้นฐานทั่วภูมิภาคอาเซียน</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="vm-section">
+            <div class="container">
+                <div class="vm-grid">
+                    <div class="vm-card">
+                        <h3>
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="var(--accent-color)"><path d="M12 2L2 22h20L12 2zm0 3.5L18.5 20H5.5L12 5.5z"/></svg>
+                            วิสัยทัศน์ (Vision)
+                        </h3>
+                        <p>"เป็นผู้นำด้านนวัตกรรมเหมืองหินระดับอาเซียน ที่มุ่งเน้นคุณภาพผลิตภัณฑ์เป็นเลิศ ควบคู่ไปกับการดูแลชุมชนและสิ่งแวดล้อมอย่างยั่งยืน"</p>
+                    </div>
+                    <div class="vm-card">
+                        <h3>
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="var(--accent-color)"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+                            พันธกิจ (Mission)
+                        </h3>
+                        <ul>
+                            <li>1. ส่งมอบหินคุณภาพสูงเพื่อรองรับงานโครงสร้างพื้นฐาน</li>
+                            <li>2. บริหารจัดการทรัพยากรธรรมชาติให้เกิดประโยชน์สูงสุด (Zero Waste)</li>
+                            <li>3. สร้างรายได้และการเติบโตไปพร้อมกับชุมชนรอบเหมือง</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="container">
+                <div class="section-header">
+                    <h2>คณะกรรมการบริหาร</h2>
+                    <div style="width: 50px; height: 3px; background: var(--accent-color); margin: 10px auto;"></div>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://placehold.co/300x300/333/FFF?text=Chairman" alt="Chairman" class="team-img">
+                        </div>
+                        <h3 class="team-name">นายเกริกไกร ศิลาแกร่ง</h3>
+                        <p class="team-role">ประธานกรรมการบริษัท</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://placehold.co/300x300/333/FFF?text=CEO" alt="CEO" class="team-img">
+                        </div>
+                        <h3 class="team-name">นางสาวรินรดา พสุธา</h3>
+                        <p class="team-role">ประธานเจ้าหน้าที่บริหาร (CEO)</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://placehold.co/300x300/333/FFF?text=MD" alt="MD" class="team-img">
+                        </div>
+                        <h3 class="team-name">นายปฐพี มั่นคง</h3>
+                        <p class="team-role">กรรมการผู้จัดการใหญ่</p>
+                    </div>
+                </div>
+            </div>
+        </section>
