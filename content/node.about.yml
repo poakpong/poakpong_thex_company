@@ -6,7 +6,7 @@ _meta:
   default_langcode: en
 title:
   -
-    value: เกี่ยวกับเรา
+    value: 'เกี่ยวกับเรา'
 uid:
   -
     target_id: 1
