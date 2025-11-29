@@ -28,3 +28,5 @@ config:
       simple_config_update:
         name: 'Saha Akanee Public Company Limited'
         slogan: 'Innovation for Future'
+        page:
+          front: '/node/1'
