@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: '6318303b-28df-48a4-b77b-0834b41a19a0'
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    94d2f831-56c4-406d-9654-f57912345678: node
+default:
+  enabled:
+    - value: true
+  title:
+    - value: 'หน้าแรก'
+  menu_name:
+    - value: main
+  link:
+    - target_uuid: '94d2f831-56c4-406d-9654-f57912345678'
+      title: ''
+      options: { }
+  external:
+    - value: false
+  rediscover:
+    - value: false
+  weight:
+    - value: -50
+  expanded:
+    - value: false
+  revision_translation_affected:
+    - value: true

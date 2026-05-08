@@ -1,6 +1,6 @@
 # Poakpong TheX Company
 
-**Poakpong TheX Company** is a Drupal Recipe designed to instantly scaffold a professional corporate demo website. It automates the setup of a company profile using the Thex theme and applies custom corporate branding via the Asset Injector module.
+**Poakpong TheX Company** is a Drupal Recipe designed to instantly scaffold a professional corporate demo website. It automates the setup of a company profile using the Thex theme, sample pages, menu links, reusable footer content, and custom corporate branding via the Asset Injector module.
 
 This recipe is ideal for developers or site builders who need to quickly spin up a polished "Company Profile" demo site with essential configurations pre-applied.
 
@@ -9,18 +9,25 @@ This recipe is ideal for developers or site builders who need to quickly spin up
 ### Theme Setup:
 - Enables **Thex** as the default frontend theme.
 - Enables **Claro** as the admin theme for a modern backend experience.
+- Places site branding, main navigation, main content, status messages, and the company footer block in Thex regions.
 
 ### Corporate Branding:
-- Sets the site name to "Saha Akanee Public Company Limited"
-- Sets a sample corporate slogan ("Innovation for Future").
+- Sets the site name to "สหอัคนี จำกัด (มหาชน)"
+- Sets the slogan to "Saha Akanee PCL."
 - Custom CSS: Automatically creates an Asset Injector entity with predefined CSS for header styling, corporate fonts, and brand colors.
+
+### Editable Demo Content:
+- Creates sample Drupal pages for Home, About, Products, Investor Relations, News, Contact, and Careers.
+- Creates main menu links for the primary navigation.
+- Creates a reusable custom block for the footer.
+- Keeps the demo sections editable through Drupal's standard content, block, and menu administration screens.
 
 ### Configuration:
 - Disables open user registration (sets to "Administrators only")—a standard practice for corporate sites.
 
 ### Dependencies:
 - Composer downloads `drupal/thex` and `drupal/asset_injector`.
-- The recipe applies Drupal core recipes for the Basic page content type and Full HTML text format before importing demo pages.
+- The recipe applies Drupal core recipes for the Basic page content type, Basic custom block type, and Full HTML text format before importing demo content.
 
 ## Prerequisites
 - Drupal 10.3+ or Drupal 11.x.
@@ -80,3 +87,10 @@ cd ..
 drush config:export -y
 drush cache:rebuild
 ```
+
+## Editing After Installation
+
+- Pages: go to `/admin/content` and edit the generated page nodes.
+- Menu: go to `/admin/structure/menu/manage/main` and edit the generated main menu links.
+- Footer block: go to `/admin/content/block` and edit the "Company footer" custom block.
+- Block placement: go to `/admin/structure/block` and adjust Thex regions if your theme layout needs a different arrangement.

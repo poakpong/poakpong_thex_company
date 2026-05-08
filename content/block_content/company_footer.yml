@@ -1,0 +1,47 @@
+_meta:
+  version: '1.0'
+  entity_type: block_content
+  uuid: '9b515e65-20b0-4aa4-9ff1-a7cad7cb0660'
+  bundle: basic
+  default_langcode: en
+default:
+  status:
+    - value: true
+  info:
+    - value: 'Company footer'
+  reusable:
+    - value: true
+  revision_translation_affected:
+    - value: true
+  body:
+    - value: |
+        <div class="custom-footer">
+          <div class="container">
+            <div class="footer-grid">
+              <div class="footer-col">
+                <h4>บมจ. สหอัคนี</h4>
+                <p>ผู้นำด้านเหมืองหินและวัสดุก่อสร้างครบวงจร มุ่งมั่นสู่ความยั่งยืน</p>
+              </div>
+              <div class="footer-col">
+                <h4>เมนูลัด</h4>
+                <ul>
+                  <li><a href="/about">เกี่ยวกับเรา</a></li>
+                  <li><a href="/products">ผลิตภัณฑ์</a></li>
+                  <li><a href="/ir">นักลงทุนสัมพันธ์</a></li>
+                  <li><a href="/careers">ร่วมงานกับเรา</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>ติดต่อเรา</h4>
+                <p>123 อาคารสหอัคนี ถ.วิภาวดีรังสิต<br>เขตจตุจักร กรุงเทพฯ 10900</p>
+                <p>โทร: 02-123-4567</p>
+                <p>Email: contact@sahaakanee.co.th</p>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>&copy; 2024 Saha Akanee Public Company Limited. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      format: full_html
+      summary: ''

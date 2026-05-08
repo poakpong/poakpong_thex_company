@@ -1,0 +1,54 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 'c7d62a1e-550a-471e-8861-fd68dc3e9f48'
+  bundle: page
+  default_langcode: en
+default:
+  type:
+    - target_id: page
+  title:
+    - value: 'ข่าวสาร'
+  status:
+    - value: true
+  body:
+    - value: |
+        <section class="company-page">
+          <div class="container">
+            <h2>ข่าวสารและกิจกรรม</h2>
+            <div class="news-grid">
+              <article class="news-card">
+                <img src="https://placehold.co/400x250/27ae60/FFF?text=CSR+Activity" alt="CSR" class="news-img">
+                <div class="news-content">
+                  <span class="news-tag">CSR &amp; Community</span>
+                  <span class="news-date">20 พ.ย. 2024</span>
+                  <h4>สหอัคนี ร่วมใจปลูกป่า 1,000 ไร่ ฟื้นฟูระบบนิเวศ</h4>
+                  <p>โครงการ Green Mining ประจำปี เพื่อคืนพื้นที่สีเขียวสู่ธรรมชาติ...</p>
+                </div>
+              </article>
+              <article class="news-card">
+                <img src="https://placehold.co/400x250/2980b9/FFF?text=Financial+Report" alt="Financial" class="news-img">
+                <div class="news-content">
+                  <span class="news-tag">Investor Relations</span>
+                  <span class="news-date">15 พ.ย. 2024</span>
+                  <h4>สรุปผลการดำเนินงาน ไตรมาส 3/2567</h4>
+                  <p>รายได้โต 15% รับอานิสงส์โครงการเมกะโปรเจกต์ภาครัฐ...</p>
+                </div>
+              </article>
+              <article class="news-card">
+                <img src="https://placehold.co/400x250/e67e22/FFF?text=Award" alt="Award" class="news-img">
+                <div class="news-content">
+                  <span class="news-tag">Company News</span>
+                  <span class="news-date">01 ต.ค. 2024</span>
+                  <h4>คว้ารางวัล "เหมืองแร่สีเขียว" 5 ปีซ้อน</h4>
+                  <p>การันตีมาตรฐานสากล ด้วยการจัดการสิ่งแวดล้อมที่ยอดเยี่ยม...</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      format: full_html
+      summary: ''
+  path:
+    - alias: '/news'
+      langcode: en

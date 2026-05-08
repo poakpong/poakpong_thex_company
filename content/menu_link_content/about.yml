@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 'e75a09f7-90d0-4796-89cc-bd2852b20c1f'
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    88d2f831-12c4-406d-9654-f57987654321: node
+default:
+  enabled:
+    - value: true
+  title:
+    - value: 'เกี่ยวกับเรา'
+  menu_name:
+    - value: main
+  link:
+    - target_uuid: '88d2f831-12c4-406d-9654-f57987654321'
+      title: ''
+      options: { }
+  external:
+    - value: false
+  rediscover:
+    - value: false
+  weight:
+    - value: -40
+  expanded:
+    - value: false
+  revision_translation_affected:
+    - value: true

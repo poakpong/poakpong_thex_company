@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: '2b978ced-f1f0-4964-af53-e7bccb74a923'
+  bundle: page
+  default_langcode: en
+default:
+  type:
+    - target_id: page
+  title:
+    - value: 'ร่วมงานกับเรา'
+  status:
+    - value: true
+  body:
+    - value: |
+        <section class="company-page">
+          <div class="container">
+            <h2>ร่วมงานกับเรา</h2>
+            <p>ตัวอย่างหน้ารับสมัครงานสำหรับเว็บไซต์องค์กร สามารถปรับเป็นรายการตำแหน่งงานจริงหรือเชื่อมกับระบบสมัครงานภายหลังได้</p>
+            <div class="feature-grid">
+              <article>
+                <h3>วิศวกรเหมืองแร่</h3>
+                <p>ดูแลแผนการผลิต มาตรฐานความปลอดภัย และการฟื้นฟูพื้นที่หลังการทำเหมือง</p>
+              </article>
+              <article>
+                <h3>เจ้าหน้าที่ควบคุมคุณภาพ</h3>
+                <p>ตรวจสอบคุณภาพผลิตภัณฑ์หินให้ได้ตามมาตรฐานงานก่อสร้างและอุตสาหกรรม</p>
+              </article>
+              <article>
+                <h3>เจ้าหน้าที่ชุมชนสัมพันธ์</h3>
+                <p>ประสานงานโครงการ CSR และกิจกรรมร่วมกับชุมชนรอบพื้นที่ปฏิบัติงาน</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      format: full_html
+      summary: ''
+  path:
+    - alias: '/careers'
+      langcode: en

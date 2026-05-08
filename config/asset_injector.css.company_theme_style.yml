@@ -4,6 +4,8 @@ dependencies:
   module:
     - asset_injector
     - system
+  theme:
+    - thex
 id: company_theme_style
 label: 'Corporate Branding Style'
 code: |
@@ -80,10 +82,58 @@ code: |
   /* --- 3. Header Customization (Override Thex) --- */
   /* บังคับสี Header ของ Thex theme ให้ตรงกับ Corporate Identity */
   header.site-header, 
-  .region-header {
+  .region-header,
+  .region-primary-menu {
     background-color: var(--white);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     z-index: 99;
+  }
+
+  header.site-header,
+  .region-header {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  .block-system-branding-block,
+  .site-branding {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+  }
+
+  .site-name,
+  .site-name a,
+  .block-system-branding-block a {
+    color: var(--primary-color);
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .region-primary-menu ul.menu,
+  .region-header ul.menu {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .region-primary-menu ul.menu li,
+  .region-header ul.menu li {
+    list-style: none;
+    margin: 0;
+  }
+
+  .region-primary-menu ul.menu a,
+  .region-header ul.menu a {
+    color: var(--primary-color);
+    font-weight: 500;
+  }
+
+  .region-primary-menu ul.menu a:hover,
+  .region-header ul.menu a:hover {
+    color: var(--accent-color);
   }
 
   /* Custom Navbar Styling (สำหรับ Block ที่คุณจะสร้าง) */
@@ -135,6 +185,11 @@ code: |
     text-align: center;
     color: var(--white);
     margin-bottom: 2rem;
+  }
+
+  .path-frontpage .page-title,
+  .path-frontpage h1.title {
+    display: none;
   }
 
   .hero-content {
@@ -201,6 +256,11 @@ code: |
     height: 4px;
     background-color: var(--accent-color);
     margin: 0 auto;
+  }
+
+  .section-title p {
+    color: #666;
+    margin-top: 15px;
   }
 
   .product-grid {
@@ -299,6 +359,10 @@ code: |
     padding: 60px 0 20px;
   }
 
+  .region-footer {
+    margin-top: 0;
+  }
+
   .footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -332,11 +396,57 @@ code: |
     color: #ccc;
   }
 
+  /* --- 9. Inner Pages --- */
+  .company-page {
+    padding: 70px 0;
+  }
+
+  .company-page h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 18px;
+  }
+
+  .company-page > .container > p {
+    color: #555;
+    font-size: 1.05rem;
+    max-width: 820px;
+  }
+
+  .feature-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 32px;
+  }
+
+  .feature-grid article {
+    background: var(--white);
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 24px;
+  }
+
+  .feature-grid h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+  }
+
   /* --- Mobile Responsive --- */
   @media (max-width: 768px) {
     .hero h1 { font-size: 2rem; }
+    .hero { height: auto; min-height: 460px; padding: 70px 0; }
     .nav-links { display: none; } /* ซ่อนเมนูชั่วคราว */
-    .logo { font-size: 1.2rem; }
+    .logo,
+    .site-name,
+    .site-name a,
+    .block-system-branding-block a { font-size: 1.2rem; }
+    .region-primary-menu ul.menu,
+    .region-header ul.menu {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 12px;
+    }
   }
 media: all
 preprocess: true

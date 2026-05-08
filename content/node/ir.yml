@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 'a2cba43e-0aa8-41d1-9e39-53fdc75e29cf'
+  bundle: page
+  default_langcode: en
+default:
+  type:
+    - target_id: page
+  title:
+    - value: 'นักลงทุนสัมพันธ์'
+  status:
+    - value: true
+  body:
+    - value: |
+        <section class="company-page">
+          <div class="container">
+            <h2>นักลงทุนสัมพันธ์</h2>
+            <p>พื้นที่รวบรวมข้อมูลสำคัญสำหรับนักลงทุน เช่น ผลประกอบการ รายงานประจำปี และข่าวแจ้งตลาดหลักทรัพย์ เนื้อหานี้เป็นตัวอย่างที่แก้ไขต่อได้ใน Drupal</p>
+            <div class="feature-grid">
+              <article>
+                <h3>ผลประกอบการล่าสุด</h3>
+                <p>รายได้เติบโต 15% จากโครงการก่อสร้างภาครัฐและคำสั่งซื้อจากอุตสาหกรรมต่อเนื่อง</p>
+              </article>
+              <article>
+                <h3>รายงานประจำปี</h3>
+                <p>เตรียมพื้นที่สำหรับลิงก์เอกสาร PDF หรือรายงานดิจิทัลของบริษัท</p>
+              </article>
+              <article>
+                <h3>ข้อมูลผู้ถือหุ้น</h3>
+                <p>แสดงข้อมูลทุนจดทะเบียน โครงสร้างผู้ถือหุ้น และปฏิทินนักลงทุนสัมพันธ์</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      format: full_html
+      summary: ''
+  path:
+    - alias: '/ir'
+      langcode: en

@@ -5,6 +5,9 @@ type: 'Site'
 install:
   - node
   - block
+  - block_content
+  - menu_link_content
+  - path
   - system
   - user
   - claro
@@ -13,6 +16,7 @@ install:
 
 recipes:
   - core/recipes/page_content_type
+  - core/recipes/basic_block_type
   - core/recipes/full_html_format_editor
 
 config:
@@ -28,6 +32,6 @@ config:
         register: 'admin_only'
     system.site:
       simpleConfigUpdate:
-        name: 'Saha Akanee Public Company Limited'
-        slogan: 'Innovation for Future'
+        name: 'สหอัคนี จำกัด (มหาชน)'
+        slogan: 'Saha Akanee PCL.'
         page.front: '/home'

@@ -1,0 +1,25 @@
+uuid: '8c2f87d5-e24a-412d-b671-1e8d9ff90b21'
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9b515e65-20b0-4aa4-9ff1-a7cad7cb0660'
+  module:
+    - block_content
+  theme:
+    - thex
+id: thex_company_footer
+theme: thex
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:9b515e65-20b0-4aa4-9ff1-a7cad7cb0660'
+settings:
+  id: 'block_content:9b515e65-20b0-4aa4-9ff1-a7cad7cb0660'
+  label: 'Company footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: { }

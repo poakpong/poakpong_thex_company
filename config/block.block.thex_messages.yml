@@ -1,0 +1,20 @@
+uuid: '55d930b6-94ff-445d-baa1-278f12a42d99'
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - thex
+id: thex_messages
+theme: thex
+region: highlighted
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: { }

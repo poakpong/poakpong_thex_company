@@ -2,21 +2,118 @@ _meta:
   version: '1.0'
   entity_type: node
   uuid: '94d2f831-56c4-406d-9654-f57912345678'
+  bundle: page
   default_langcode: en
+default:
+  type:
+    - target_id: page
+  title:
+    - value: 'หน้าแรก'
+  status:
+    - value: true
+  body:
+    - value: |
+        <section class="hero">
+          <div class="container hero-content">
+            <h1>รากฐานที่แข็งแกร่ง<br>สู่การก่อสร้างที่ยั่งยืน</h1>
+            <p>ผู้นำด้านอุตสาหกรรมเหมืองหินและผลิตภัณฑ์หินแปรรูปครบวงจร<br>มุ่งเน้นคุณภาพควบคู่ไปกับการดูแลชุมชนและสิ่งแวดล้อม</p>
+            <a href="/products" class="btn btn-primary">ดูผลิตภัณฑ์ของเรา</a>
+          </div>
+        </section>
 
-type:
-  - target_id: page
+        <section class="stats">
+          <div class="container stats-grid">
+            <div class="stat-item">
+              <h3>30+</h3>
+              <p>ปีแห่งประสบการณ์</p>
+            </div>
+            <div class="stat-item">
+              <h3>5</h3>
+              <p>เหมืองหินคุณภาพ</p>
+            </div>
+            <div class="stat-item">
+              <h3>10M+</h3>
+              <p>ตัน กำลังการผลิตต่อปี</p>
+            </div>
+            <div class="stat-item">
+              <h3>SET</h3>
+              <p>จดทะเบียนในตลาดหลักทรัพย์ฯ</p>
+            </div>
+          </div>
+        </section>
 
-title:
-  - value: 'Home'
+        <section class="products">
+          <div class="container">
+            <div class="section-title">
+              <h2>ผลิตภัณฑ์ของเรา</h2>
+              <div class="divider"></div>
+              <p>ตอบโจทย์ทุกความต้องการด้านงานก่อสร้างและอุตสาหกรรม</p>
+            </div>
+            <div class="product-grid">
+              <article class="product-card">
+                <img src="https://placehold.co/400x300/555/FFF?text=Construction+Stone" alt="หินก่อสร้าง" class="product-img">
+                <div class="product-content">
+                  <h3>หินเพื่อการก่อสร้าง</h3>
+                  <p>หินคลุก, หิน 3/4 คุณภาพสูง สำหรับงานถนนและคอนกรีต แข็งแรง ทนทาน</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <img src="https://placehold.co/400x300/555/FFF?text=Industrial+Stone" alt="หินอุตสาหกรรม" class="product-img">
+                <div class="product-content">
+                  <h3>หินเพื่ออุตสาหกรรม</h3>
+                  <p>หินปูนบดละเอียด วัตถุดิบสำคัญสำหรับอุตสาหกรรมแก้ว เซรามิก และเคมีภัณฑ์</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <img src="https://placehold.co/400x300/555/FFF?text=Decorative+Stone" alt="หินตกแต่ง" class="product-img">
+                <div class="product-content">
+                  <h3>หินตกแต่งสวน</h3>
+                  <p>หินกาบ หินภูเขา และหินแม่น้ำ คัดพิเศษเพื่อความสวยงามในงานสถาปัตยกรรม</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
 
-status:
-  - value: true
-
-body:
-  - value: '<p>Welcome to our Home page.</p>'
-    format: 'full_html'
-
-path:
-  - alias: '/home'
-    langcode: en
+        <section class="news">
+          <div class="container">
+            <div class="section-title">
+              <h2>ข่าวสารและกิจกรรม</h2>
+              <div class="divider"></div>
+            </div>
+            <div class="news-grid">
+              <article class="news-card">
+                <img src="https://placehold.co/400x250/27ae60/FFF?text=CSR+Activity" alt="CSR" class="news-img">
+                <div class="news-content">
+                  <span class="news-tag">CSR &amp; Community</span>
+                  <span class="news-date">20 พ.ย. 2024</span>
+                  <h4>สหอัคนี ร่วมใจปลูกป่า 1,000 ไร่ ฟื้นฟูระบบนิเวศ</h4>
+                  <p>โครงการ Green Mining ประจำปี เพื่อคืนพื้นที่สีเขียวสู่ธรรมชาติ...</p>
+                </div>
+              </article>
+              <article class="news-card">
+                <img src="https://placehold.co/400x250/2980b9/FFF?text=Financial+Report" alt="Financial" class="news-img">
+                <div class="news-content">
+                  <span class="news-tag">Investor Relations</span>
+                  <span class="news-date">15 พ.ย. 2024</span>
+                  <h4>สรุปผลการดำเนินงาน ไตรมาส 3/2567</h4>
+                  <p>รายได้โต 15% รับอานิสงส์โครงการเมกะโปรเจกต์ภาครัฐ...</p>
+                </div>
+              </article>
+              <article class="news-card">
+                <img src="https://placehold.co/400x250/e67e22/FFF?text=Award" alt="Award" class="news-img">
+                <div class="news-content">
+                  <span class="news-tag">Company News</span>
+                  <span class="news-date">01 ต.ค. 2024</span>
+                  <h4>คว้ารางวัล "เหมืองแร่สีเขียว" 5 ปีซ้อน</h4>
+                  <p>การันตีมาตรฐานสากล ด้วยการจัดการสิ่งแวดล้อมที่ยอดเยี่ยม...</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      format: full_html
+      summary: ''
+  path:
+    - alias: '/home'
+      langcode: en

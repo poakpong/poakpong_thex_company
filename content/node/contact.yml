@@ -1,0 +1,39 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: '770ecbf5-5d8d-4870-bae3-4647ec78d318'
+  bundle: page
+  default_langcode: en
+default:
+  type:
+    - target_id: page
+  title:
+    - value: 'ติดต่อเรา'
+  status:
+    - value: true
+  body:
+    - value: |
+        <section class="company-page">
+          <div class="container">
+            <h2>ติดต่อเรา</h2>
+            <div class="feature-grid">
+              <article>
+                <h3>สำนักงานใหญ่</h3>
+                <p>123 อาคารสหอัคนี ถ.วิภาวดีรังสิต<br>เขตจตุจักร กรุงเทพฯ 10900</p>
+              </article>
+              <article>
+                <h3>ช่องทางติดต่อ</h3>
+                <p>โทร: 02-123-4567<br>Email: contact@sahaakanee.co.th</p>
+              </article>
+              <article>
+                <h3>เวลาทำการ</h3>
+                <p>จันทร์ - ศุกร์ เวลา 08:30 - 17:30 น.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      format: full_html
+      summary: ''
+  path:
+    - alias: '/contact'
+      langcode: en

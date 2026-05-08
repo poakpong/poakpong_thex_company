@@ -1,0 +1,49 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: '079e0a2c-4e31-4d8b-81df-0a6a7528c4a1'
+  bundle: page
+  default_langcode: en
+default:
+  type:
+    - target_id: page
+  title:
+    - value: 'ผลิตภัณฑ์'
+  status:
+    - value: true
+  body:
+    - value: |
+        <section class="company-page">
+          <div class="container">
+            <h2>ผลิตภัณฑ์ของเรา</h2>
+            <p>ตัวอย่างหน้าผลิตภัณฑ์นี้จัดทำเป็น Drupal node เพื่อให้ทีมเนื้อหาแก้ไขรายละเอียดสินค้าและภาพประกอบได้โดยตรง</p>
+            <div class="product-grid">
+              <article class="product-card">
+                <img src="https://placehold.co/400x300/555/FFF?text=Construction+Stone" alt="หินก่อสร้าง" class="product-img">
+                <div class="product-content">
+                  <h3>หินเพื่อการก่อสร้าง</h3>
+                  <p>หินคลุกและหิน 3/4 สำหรับงานถนน งานคอนกรีต และโครงสร้างพื้นฐาน</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <img src="https://placehold.co/400x300/555/FFF?text=Industrial+Stone" alt="หินอุตสาหกรรม" class="product-img">
+                <div class="product-content">
+                  <h3>หินเพื่ออุตสาหกรรม</h3>
+                  <p>หินปูนบดละเอียดสำหรับอุตสาหกรรมแก้ว เซรามิก เคมีภัณฑ์ และวัสดุเฉพาะทาง</p>
+                </div>
+              </article>
+              <article class="product-card">
+                <img src="https://placehold.co/400x300/555/FFF?text=Decorative+Stone" alt="หินตกแต่ง" class="product-img">
+                <div class="product-content">
+                  <h3>หินตกแต่งสวน</h3>
+                  <p>หินกาบ หินภูเขา และหินแม่น้ำสำหรับงานภูมิทัศน์และสถาปัตยกรรม</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      format: full_html
+      summary: ''
+  path:
+    - alias: '/products'
+      langcode: en

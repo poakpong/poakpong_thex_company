@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: 'c6940498-6da7-41a4-b442-41adf40ba6e0'
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    079e0a2c-4e31-4d8b-81df-0a6a7528c4a1: node
+default:
+  enabled:
+    - value: true
+  title:
+    - value: 'ผลิตภัณฑ์'
+  menu_name:
+    - value: main
+  link:
+    - target_uuid: '079e0a2c-4e31-4d8b-81df-0a6a7528c4a1'
+      title: ''
+      options: { }
+  external:
+    - value: false
+  rediscover:
+    - value: false
+  weight:
+    - value: -30
+  expanded:
+    - value: false
+  revision_translation_affected:
+    - value: true

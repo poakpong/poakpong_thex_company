@@ -2,21 +2,39 @@ _meta:
   version: '1.0'
   entity_type: node
   uuid: '88d2f831-12c4-406d-9654-f57987654321'
+  bundle: page
   default_langcode: en
-
-type:
-  - target_id: page
-
-title:
-  - value: 'เกี่ยวกับเรา'
-
-status:
-  - value: true
-
-body:
-  - value: '<p>About Us content goes here.</p>'
-    format: 'full_html'
-
-path:
-  - alias: '/about'
-    langcode: en
+default:
+  type:
+    - target_id: page
+  title:
+    - value: 'เกี่ยวกับเรา'
+  status:
+    - value: true
+  body:
+    - value: |
+        <section class="company-page">
+          <div class="container">
+            <h2>เกี่ยวกับ บมจ. สหอัคนี</h2>
+            <p>สหอัคนีคือบริษัทตัวอย่างสำหรับเว็บไซต์องค์กรในอุตสาหกรรมเหมืองหินและวัสดุก่อสร้างครบวงจร เนื้อหาหน้านี้ถูกสร้างเป็น Drupal node เพื่อให้ผู้ดูแลเว็บไซต์แก้ไขต่อได้จากหน้าจัดการเนื้อหา</p>
+            <div class="feature-grid">
+              <article>
+                <h3>วิสัยทัศน์</h3>
+                <p>เป็นผู้นำด้านวัตถุดิบก่อสร้างที่เติบโตอย่างรับผิดชอบต่อชุมชนและสิ่งแวดล้อม</p>
+              </article>
+              <article>
+                <h3>พันธกิจ</h3>
+                <p>ส่งมอบผลิตภัณฑ์คุณภาพสูง ด้วยกระบวนการผลิตที่ปลอดภัย โปร่งใส และตรวจสอบได้</p>
+              </article>
+              <article>
+                <h3>ความยั่งยืน</h3>
+                <p>ดูแลพื้นที่เหมืองและชุมชนรอบข้างผ่านการฟื้นฟูพื้นที่สีเขียวและโครงการ CSR ต่อเนื่อง</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      format: full_html
+      summary: ''
+  path:
+    - alias: '/about'
+      langcode: en

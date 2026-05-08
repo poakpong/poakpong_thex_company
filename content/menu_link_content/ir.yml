@@ -1,0 +1,29 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: '86a73f2c-2e54-4543-8c42-048fd5a2b9c9'
+  bundle: menu_link_content
+  default_langcode: en
+  depends:
+    a2cba43e-0aa8-41d1-9e39-53fdc75e29cf: node
+default:
+  enabled:
+    - value: true
+  title:
+    - value: 'นักลงทุนสัมพันธ์'
+  menu_name:
+    - value: main
+  link:
+    - target_uuid: 'a2cba43e-0aa8-41d1-9e39-53fdc75e29cf'
+      title: ''
+      options: { }
+  external:
+    - value: false
+  rediscover:
+    - value: false
+  weight:
+    - value: -20
+  expanded:
+    - value: false
+  revision_translation_affected:
+    - value: true
