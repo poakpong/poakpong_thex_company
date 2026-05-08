@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - asset_injector
+    - system
 id: company_theme_style
 label: 'Corporate Branding Style'
 code: |

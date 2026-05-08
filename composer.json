@@ -5,6 +5,7 @@
   "type": "drupal-recipe",
   "license": "GPL-2.0-or-later",
   "require": {
+    "drupal/core": "^10.3 || ^11",
     "drupal/thex": "*",
     "drupal/asset_injector": "*"
   }

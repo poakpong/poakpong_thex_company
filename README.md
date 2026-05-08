@@ -4,7 +4,7 @@
 
 This recipe is ideal for developers or site builders who need to quickly spin up a polished "Company Profile" demo site with essential configurations pre-applied.
 
-## 🚀 Key Features
+## Key Features
 
 ### Theme Setup:
 - Enables **Thex** as the default frontend theme.
@@ -19,18 +19,19 @@ This recipe is ideal for developers or site builders who need to quickly spin up
 - Disables open user registration (sets to "Administrators only")—a standard practice for corporate sites.
 
 ### Dependencies:
-- Automatically installs `drupal/thex` and `drupal/asset_injector`.
+- Composer downloads `drupal/thex` and `drupal/asset_injector`.
+- The recipe applies Drupal core recipes for the Basic page content type and Full HTML text format before importing demo pages.
 
-## 📦 Prerequisites
-- Drupal 10.3+ (Core version supporting Recipes).
+## Prerequisites
+- Drupal 10.3+ or Drupal 11.x.
 - Composer.
 
 ## Installation Guide
 
 ### Prerequisites
 Before running this recipe, please ensure that:
-1. You have a **standard Drupal site installed**.
-2. You have placed the `poakpong_thex_company` folder inside the `recipes` directory of your Drupal project (e.g., at `your-project-root/drupal/recipes/poakpong_thex_company`).
+1. You have an installed Drupal site.
+2. You have placed the `poakpong_thex_company` folder inside the `recipes` directory of your Drupal project (e.g., `your-project-root/recipes/poakpong_thex_company`).
 
 ### Steps
 
@@ -45,7 +46,7 @@ cd ..
 
 (Note: The `cd ..` command returns you to the project root for the next steps.)
 
-#### 2. Add the Recipe to the project
+#### 2. Add the Recipe to the Project
 
 Run the following commands at the project root to register and require the recipe:
 
@@ -55,16 +56,22 @@ composer require poakpong/poakpong_thex_company
 drush cache:rebuild
 ```
 
-#### 2. Run the Recipe
+#### 3. Run the Recipe
 
-Navigate to the web directory to apply the recipe:
+Navigate to the web directory and apply the recipe:
 
 ```bash
 cd web
-php core/scripts/drupal recipe ../recipes/poakpong_thex_company
+php core/scripts/drupal recipe ../recipes/poakpong_thex_company -v
 ```
 
-#### 3. Export Config and Clear Cache
+Alternatively, with Drush 13 or later:
+
+```bash
+drush recipe ../recipes/poakpong_thex_company
+```
+
+#### 4. Export Config and Clear Cache
 
 Go back to the project root to export the new configurations:
 

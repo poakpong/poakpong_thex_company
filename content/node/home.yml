@@ -1,0 +1,22 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: '94d2f831-56c4-406d-9654-f57912345678'
+  default_langcode: en
+
+type:
+  - target_id: page
+
+title:
+  - value: 'Home'
+
+status:
+  - value: true
+
+body:
+  - value: '<p>Welcome to our Home page.</p>'
+    format: 'full_html'
+
+path:
+  - alias: '/home'
+    langcode: en

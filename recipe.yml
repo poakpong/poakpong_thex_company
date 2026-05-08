@@ -7,26 +7,27 @@ install:
   - block
   - system
   - user
+  - claro
   - asset_injector
   - thex
 
 recipes:
-  - components/demo_pages
+  - core/recipes/page_content_type
+  - core/recipes/full_html_format_editor
 
 config:
   import:
     asset_injector: '*'
   actions:
     system.theme:
-      simple_config_update:
+      simpleConfigUpdate:
         default: 'thex'
         admin: 'claro'
     user.settings:
-      simple_config_update:
+      simpleConfigUpdate:
         register: 'admin_only'
     system.site:
-      simple_config_update:
+      simpleConfigUpdate:
         name: 'Saha Akanee Public Company Limited'
         slogan: 'Innovation for Future'
-        page:
-          front: '/home'
+        page.front: '/home'
